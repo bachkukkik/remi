@@ -5,7 +5,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 def main():
     # declare model
     model = PopMusicTransformer(
-        checkpoint='REMI-tempo-checkpoint',
+        checkpoint='kukkik-finetuned-checkpoint',
         is_training=False)
     
     # generate from scratch
@@ -22,7 +22,7 @@ def main():
         temperature=1.2,
         topk=5
         output_path='./result/continuation.midi',
-        prompt='./data/evaluation/000.midi')
+        prompt='./data/evaluation/012.midi')
     
     # close model
     model.close()
