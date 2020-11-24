@@ -13,7 +13,7 @@ def main():
         n_target_bar=16,
         temperature=1.2,
         topk=5,
-        output_path='./result/from_scratch.midi',
+        output_path='./result/from_scratch_finetuned.midi',
         prompt=None)
     
     # generate continuation
@@ -21,7 +21,7 @@ def main():
         n_target_bar=16,
         temperature=1.2,
         topk=5
-        output_path='./result/continuation.midi',
+        output_path='./result/continuation_finetuned.midi',
         prompt='./data/evaluation/012.midi')
     
     # close model
