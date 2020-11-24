@@ -9,7 +9,7 @@ def main():
         checkpoint='REMI-tempo-checkpoint',
         is_training=True)
     # prepare data
-    midi_paths = glob('YOUR PERSOANL FOLDER/*.midi') # you need to revise it
+    midi_paths = glob('ragtime_data/*.mid') # you need to revise it
     training_data = model.prepare_data(midi_paths=midi_paths)
 
     # check output checkpoint folder
