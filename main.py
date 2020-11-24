@@ -20,7 +20,7 @@ def main():
     model.generate(
         n_target_bar=16,
         temperature=1.2,
-        topk=5
+        topk=5,
         output_path='./result/continuation_finetuned.midi',
         prompt='./data/evaluation/012.midi')
     
