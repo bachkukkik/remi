@@ -265,7 +265,7 @@ class PopMusicTransformer(object):
         training_data = training_data[index]
         num_batches = len(training_data) // self.batch_size
         st = time.time()
-        for e in range(200):
+        for e in range(1000):
             total_loss = []
             for i in range(num_batches):
                 segments = training_data[self.batch_size*i:self.batch_size*(i+1)]
