@@ -20,7 +20,7 @@ class PopMusicTransformer(object):
         self.n_layer = 12
         self.d_embed = 512
         self.d_model = 512
-        self.dropout = 0.1
+        self.dropout = 0.3
         self.n_head = 8
         self.d_head = self.d_model // self.n_head
         self.d_ff = 2048
